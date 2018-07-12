@@ -38,7 +38,7 @@ Namespace Dashboard_ItemCollectionChanged_Example
         End Sub
         Private Sub AddToLog(ByVal actionLabel As String, ByVal items As IList(Of DashboardItem))
             Dim strItems = items.Select(Function(i) String.Format("{0} ComponentName= {1}, Name= {2}", actionLabel, i.ComponentName, i.Name))
-            memoEdit1.Text += String.Format("{0}" & ControlChars.CrLf, String.Join(",", strItems))
+            memoEdit1.Text += String.Format("{0}" & ControlChars.CrLf, String.Join("; ", strItems))
             memoEdit1.SelectionStart = memoEdit1.Text.Length - 1
             memoEdit1.ScrollToCaret()
         End Sub
