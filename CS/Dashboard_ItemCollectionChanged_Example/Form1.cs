@@ -43,7 +43,7 @@ namespace Dashboard_ItemCollectionChanged_Example
         private void AddToLog(string actionLabel, IList<DashboardItem> items)
         {
             var strItems = items.Select(i => String.Format("{0} ComponentName= {1}, Name= {2}", actionLabel, i.ComponentName, i.Name));
-            memoEdit1.Text += String.Format("{0}\r\n", String.Join(",", strItems));
+            memoEdit1.Text += String.Format("{0}\r\n", String.Join("; ", strItems));
             memoEdit1.SelectionStart = memoEdit1.Text.Length - 1;
             memoEdit1.ScrollToCaret();
         }
