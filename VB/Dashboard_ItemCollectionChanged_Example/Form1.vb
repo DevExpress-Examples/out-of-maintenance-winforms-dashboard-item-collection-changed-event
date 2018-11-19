@@ -26,7 +26,8 @@ Namespace Dashboard_ItemCollectionChanged_Example
         Private Sub Dashboard_ItemCollectionChanged(ByVal sender As Object, ByVal e As NotifyingCollectionChangedEventArgs(Of DashboardItem))
             Dim dBoard As Dashboard = TryCast(sender, Dashboard)
             If e.AddedItems.Count > 0 Then
-                If e.AddedItems.Count = 1 AndAlso dBoard.Items.Count(Function(i) i.Name = e.AddedItems(0).Name) > 1 Then
+                Dim dBoardItems As IList(Of DashboardItem) = TryCast(dBoard.Items, IList(Of DashboardItem))
+                If e.AddedItems.Count = 1 AndAlso dBoardItems.LongCount(Function(i) i.Name = e.AddedItems(0).Name) > 1 Then
                     AddToLog("Duplicated", e.AddedItems)
                 Else
                     AddToLog("Added", e.AddedItems)
