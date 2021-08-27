@@ -1,3 +1,8 @@
+<!-- default badges list -->
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/140725090/18.1.4%2B)
+[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T830560)
+[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+<!-- default badges end -->
 # How to notify when a dashboard item is added, removed or duplicated
 
 This example handles the [Dashboard.ItemCollectionChanged](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.Dashboard.ItemCollectionChanged) event to obtain added or removed [dashboard items](https://docs.devexpress.com/Dashboard/116521/basic-concepts-and-terminology/dashboard-items).
