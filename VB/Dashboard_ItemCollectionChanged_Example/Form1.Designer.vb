@@ -1,5 +1,7 @@
-﻿Namespace Dashboard_ItemCollectionChanged_Example
-    Partial Public Class Form1
+Namespace Dashboard_ItemCollectionChanged_Example
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -28,8 +30,8 @@
             Me.ribbonStatusBar1 = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
             Me.memoEdit1 = New DevExpress.XtraEditors.MemoEdit()
             Me.ribbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
-            CType(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.memoEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.memoEdit1.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' dashboardDesigner1
@@ -48,7 +50,7 @@
             ' ribbonControl1
             ' 
             Me.ribbonControl1.ExpandCollapseItem.Id = 0
-            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.ribbonControl1.ExpandCollapseItem})
+            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem})
             Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
             Me.ribbonControl1.MaxItemId = 1
             Me.ribbonControl1.Name = "ribbonControl1"
@@ -71,7 +73,7 @@
             Me.memoEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Blue
             Me.memoEdit1.Properties.Appearance.Options.UseBackColor = True
             Me.memoEdit1.Properties.Appearance.Options.UseForeColor = True
-            Me.memoEdit1.Properties.ReadOnly = True
+            Me.memoEdit1.Properties.[ReadOnly] = True
             Me.memoEdit1.Size = New System.Drawing.Size(840, 100)
             Me.memoEdit1.TabIndex = 1
             ' 
@@ -92,20 +94,21 @@
             Me.Ribbon = Me.ribbonControl1
             Me.StatusBar = Me.ribbonStatusBar1
             Me.Text = "Dashboard ItemCollectionChanged Example"
-            CType(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.memoEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.memoEdit1.Properties), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+#End Region
         Private dashboardDesigner1 As DevExpress.DashboardWin.DashboardDesigner
+
         Private memoEdit1 As DevExpress.XtraEditors.MemoEdit
+
         Private ribbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
+
         Private ribbonStatusBar1 As DevExpress.XtraBars.Ribbon.RibbonStatusBar
+
         Private ribbonPage2 As DevExpress.XtraBars.Ribbon.RibbonPage
     End Class
 End Namespace
-
